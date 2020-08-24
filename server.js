@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 // IMPORT ROUTERS
-// const { activityRouter } = require('./controllers/activity.js')
+require("./routes/routes")(app)
 
 
 // PARSE REGISTERED MIDDLEWARE

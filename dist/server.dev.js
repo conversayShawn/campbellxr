@@ -4,8 +4,8 @@
 var express = require('express');
 
 var app = express(); // IMPORT ROUTERS
-// const { activityRouter } = require('./controllers/activity.js')
-// PARSE REGISTERED MIDDLEWARE
+
+require("./routes/routes")(app); // PARSE REGISTERED MIDDLEWARE
 // app.use(express.urlencoded({extended: true}))
 // PARSE HTTP REQUEST FROM JSON STRING
 // app.use(express.json())
@@ -23,6 +23,7 @@ var app = express(); // IMPORT ROUTERS
 //     res.sendFile(`${__dirname}/client/build/index.html`)
 // })
 // PORT NUMBER
+
 
 var PORT = process.env.PORT || 3000; // LOCALHOST: PORT(above)
 
